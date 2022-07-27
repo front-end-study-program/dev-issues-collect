@@ -7,5 +7,5 @@
   2.1 支付宝小程序暂不支持<br/>
   2.2 微信小程序可以为输入框设置 adjust-position 属性
  3. 支付宝小程序输入框光标错位问题
-  3.1 可以设置 enableNative=false 属性来解决问题。但是 confirm-type 属性设置会失效。
-  3.2 给输入框或者父级元素设置 position: fixed; css属性
+  3.1 可以设置 enableNative=false 属性来解决问题。但是 confirm-type 属性设置会失效.
+  3.2 给输入框或者父级元素设置 position: fixed; css属性.
