@@ -9,4 +9,4 @@
  3. 支付宝小程序输入框光标错位问题<br/>
   3.1 可以设置 enableNative=false 属性来解决问题。但是 confirm-type 属性设置会失效<br/>
   3.2 给输入框或者父级元素设置 position: fixed; css属性<br/>
- 4. 属性传值会把函数类型的值转递消失。如：JSON.stringify 一般
+ 4. 属性传值会把函数类型的值转递消失。如：JSON.stringify 一般 [问题链接](https://github.com/dcloudio/uni-app/issues/1522)
