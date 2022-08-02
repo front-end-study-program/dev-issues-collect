@@ -12,3 +12,4 @@
 4. 属性传值会把函数类型的值转递消失。如：JSON.stringify 一般 [解决方案](https://github.com/dcloudio/uni-app/issues/1522) 重写 uniapp 挂载在 vue 实例属性上的[__patch__](https://github1s.com/dcloudio/uni-app/blob/HEAD/packages/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js#L5428) 方法
 5. 输入框类型为 number 的时候，设置 maxlength 无用属性会导致事件无法触发，绑定的值无法改变
 6. 支付宝小程序有提供 contact-button 智能客服的界面可直接套用
+7. scroll-view 滚动到底部，可以设置 scroll-into-view="id"
