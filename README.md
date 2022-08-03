@@ -13,4 +13,4 @@
 5. 输入框类型为 number 的时候，设置 maxlength 无用属性会导致事件无法触发，绑定的值无法改变
 6. 支付宝小程序有提供 contact-button 智能客服的界面可直接套用
 7. scroll-view 滚动到底部，可以设置 scroll-into-view="id"，需要重置才会重新触发到底
-8. pages.json 中 pages 第一项不是 tarbar 的路由会导致 IOS 中 tarbar 向上错位
+8. pages.json 中 pages 第一项不是 tarbar 的路由页面会导致 IOS 中 tarbar 向上错位
