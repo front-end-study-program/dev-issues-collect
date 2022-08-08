@@ -16,3 +16,4 @@
 8. pages.json 中 pages 第一项不是 tarbar 的路由页面会导致 IOS 中 tarbar 向上错位
 9. 支付宝小程序调用录音 API 生成的临时文件就是以 .audio 为后缀。不会因为设置 format 值而改为 .mp3。通过 uploadFile 上传之后会变成 wav 格式的。如果需要是 mp3 格式可通过重写文件改后缀的方式。
 10. 支付宝小程序 readFileSync 写入的文件是永久的
+11. 支付宝小程序 uploadFile 接口会默认设置 Content-type 为 'multipart/form-data'，如果我们再次在 header 设置一遍可能会导致 android 上传报系统异常的问题。
