@@ -17,3 +17,4 @@
 9. 支付宝小程序调用录音 API 生成的临时文件就是以 .audio 为后缀。不会因为设置 format 值而改为 .mp3。通过 uploadFile 上传之后会变成 wav 格式的。如果需要是 mp3 格式可通过重写文件改后缀的方式。
 10. 支付宝小程序 readFileSync 写入的文件是永久的
 11. 支付宝小程序 uploadFile 接口会默认设置 Content-type 为 'multipart/form-data'，如果我们再次在 header 设置一遍可能会导致 android 上传报系统异常的问题。
+12. 支付宝小程序中遍历渲染数组，key 属性如果是一致的话，会导致事件转递的值为 undefined。
