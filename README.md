@@ -18,3 +18,31 @@
 10. 支付宝小程序 readFileSync 写入的文件是永久的
 11. 支付宝小程序 uploadFile 接口会默认设置 Content-type 为 'multipart/form-data'，如果我们再次在 header 设置一遍可能会导致 android 上传报系统异常的问题。
 12. 支付宝小程序中遍历渲染数组，key 属性如果是一致的话，会导致事件转递的值为 undefined。
+13. 支付宝实现自定义导航栏。支付宝自带的导航栏不支持渐变色。文字颜色不能随意改变
+  1. pages.json
+   ```json
+   "style": {
+      "navigationBarTitleText": "标题",
+      "transparentTitle": "always",
+      "navigationBarTextStyle": "white",
+      "navigationBarBackgroundColor": "black"
+    }
+   ```
+   2. 自定义导航栏
+   ```vue
+   <template>
+    <view class="nav-bar" :style={height: titleBarHeight + statusBarHeight}></view>
+   </template>
+   <script>
+   const { titleBarHeight, statusBarHeight } = uni.getSystemInfoSync();
+   export default {
+      name: 'NavBar',
+      data() {
+        return {
+          titleBarHeight, // 手机标题栏高度
+          statusBarHeight // 手机状态栏的高度
+        }
+      }
+   }
+   </script>
+   ```
