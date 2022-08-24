@@ -31,7 +31,7 @@
    2. 自定义导航栏
    ```vue
    <template>
-    <view class="nav-bar" :style={height: titleBarHeight + statusBarHeight}></view>
+    <view class="nav-bar" :style="{height: titleBarHeight + statusBarHeight}"></view>
    </template>
    <script>
    const { titleBarHeight, statusBarHeight } = uni.getSystemInfoSync();
