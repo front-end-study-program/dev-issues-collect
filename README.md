@@ -46,3 +46,4 @@
    }
    </script>
    ```
+   14. 支付宝小程序应用[schema链接](https://opendocs.alipay.com/support/01rb18)，跳转体验版或者开发版[文档](https://opendocs.alipay.com/support/01rb0j)
