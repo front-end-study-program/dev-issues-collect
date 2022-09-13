@@ -19,23 +19,25 @@
 11. 支付宝小程序 uploadFile 接口会默认设置 Content-type 为 'multipart/form-data'，如果我们再次在 header 设置一遍可能会导致 android 上传报系统异常的问题。
 12. 支付宝小程序中遍历渲染数组，key 属性如果是一致的话，会导致事件转递的值为 undefined。
 13. 支付宝实现自定义导航栏。支付宝自带的导航栏不支持渐变色。文字颜色不能随意改变
-  1. pages.json
-   ```json
-   "style": {
-      "navigationBarTitleText": "标题",
-      "transparentTitle": "always",
-      "navigationBarTextStyle": "white",
-      "navigationBarBackgroundColor": "black"
-    }
-   ```
-   2. 自定义导航栏
-   ```vue
-   <template>
-    <view class="nav-bar" :style="{height: titleBarHeight + statusBarHeight}"></view>
-   </template>
-   <script>
-   const { titleBarHeight, statusBarHeight } = uni.getSystemInfoSync();
-   export default {
+  - pages.json
+  
+    ```json
+      "style": {
+        "navigationBarTitleText": "标题",
+        "transparentTitle": "always",
+        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "black"
+      }
+    ```
+  - 自定义导航栏
+  
+    ```vue
+    <template>
+      <view class="nav-bar" :style="{height: titleBarHeight + statusBarHeight}"></view>
+    </template>
+    <script>
+    const { titleBarHeight, statusBarHeight } = uni.getSystemInfoSync();
+    export default {
       name: 'NavBar',
       data() {
         return {
@@ -43,7 +45,10 @@
           statusBarHeight // 手机状态栏的高度
         }
       }
-   }
-   </script>
-   ```
-   14. 支付宝小程序应用[schema链接](https://opendocs.alipay.com/support/01rb18)，跳转体验版或者开发版[文档](https://opendocs.alipay.com/support/01rb0j)
+    }
+    </script>
+    ```
+ 
+14. 支付宝小程序[schema链接](https://opendocs.alipay.com/support/01rb18)默认是跳转发布上线的应用，如果需要跳转体验版或者开发版本[文档](https://opendocs.alipay.com/support/01rb0j)。需要开启对应版本中右上角 -> 联调设置 -> 联调扫码版本.
+
+ 
