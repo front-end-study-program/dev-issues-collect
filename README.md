@@ -52,14 +52,15 @@
 14. 支付宝小程序[schema链接](https://opendocs.alipay.com/support/01rb18)默认是跳转发布上线的应用，如果需要跳转体验版或者开发版本[文档](https://opendocs.alipay.com/support/01rb0j)。需要开启对应版本中右上角 -> 联调设置 -> 联调扫码版本.
 
 15. 支付宝小程序禁止页面回弹
-  ```json
-  // page.json
- {
-    "pages": [
-      "path": "path",
-      "style": {
-        "allowsBounceVertical": "NO"
-      }
-    ]
-  }
-  ```
+    ```json
+    // page.json
+    {
+      "pages": [
+        "path": "path",
+        "style": {
+          "allowsBounceVertical": "NO"
+        }
+      ]
+    }
+    ```
+16. vite 打包 h5 代码，代码中不能有解构 uni 变量的操作，内部构建会将其进行 tree shaking 操作。
