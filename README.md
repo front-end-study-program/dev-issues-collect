@@ -72,3 +72,12 @@
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
     - 为下拉刷新添加 touchcancel 事件，不过会导致难以触发。vant 的实现就是这个。
     - 设置 body 样式 overflow: hidden; 但是这样所有页面的滚动给就要自己控制了。
+    
+2. 修改文字颜色，除了直接设置 color，还可以通过背景的方式去改变文字颜色
+    ```css
+    .class {
+      background-color: #0093E9;
+      color: transparent;
+      background-clip: text;
+    }
+    ```
