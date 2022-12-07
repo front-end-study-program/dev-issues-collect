@@ -75,6 +75,8 @@
 
 21. uni.createInnerAudioContext() H5和小程序音频播放的时机不同，小程序在 onPlay 钩子触发时，就在播放了。H5 onPlay 钩子触发时不一定在播放，需要下载。所以在 onCanplay 钩子中才能正确把握播放的时机。
 
+22. uni.createInnerAudioContext() 微信小程序安卓机不能直接播放请求链接，通过 uni.downloadFile 下载文件，拿到下载的文件链接可正常播放。
+
 ## H5
 
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
