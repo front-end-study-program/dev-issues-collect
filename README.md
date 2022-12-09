@@ -78,6 +78,10 @@
 22. uni.createInnerAudioContext() 微信小程序安卓机不能直接播放请求链接，通过 uni.downloadFile 下载文件，拿到下载的文件链接可正常播放。
 
 23. 微信小程序内嵌的 h5 页面不允许调用微信支付，只能通过原生微信小程序来调起支付。
+  - h5 支付调起原生的页面进行支付
+  - 支付成功或者失败返回 webview 页面
+  - 支付成功通知 webview 页面，更新 src 链接，这样会往 webview push 一个最新的 src 链接
+  - 最新的 src 链接中进行 replace 的操作会让 webview 的 h5 路由栈多返回一层（非常奇怪）
 
 24. 微信订阅号无法进行网页授权
 
