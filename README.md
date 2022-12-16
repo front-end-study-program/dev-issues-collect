@@ -99,3 +99,12 @@
       background-clip: text;
     }
     ```
+3. 解决子元素设置 margin-top 影响到父元素
+   ```css
+   .parent {
+     padding-top: 1px; // 设置 1px 会破坏非空白的折叠条件
+   }
+   .child {
+     margin-top: 50px;
+   }
+   ```
