@@ -85,6 +85,25 @@
 
 24. 微信订阅号无法进行网页授权
 
+25. 小程序中 canvas 层级问题，开启 canvas2d 模式解决。以下是 uCharts 的解决方式：
+![image](https://user-images.githubusercontent.com/49627376/209652041-1431c079-457b-4e4a-a5d8-ba6cde72bd70.png)
+
+```vue
+<template>
+  <qiun-data-charts
+    type="column"
+    canvasId="interview-result-post-competitiveness"
+    :canvas2d="true"
+    height="278"
+    :animation="false"
+    :opts="chartOpts"
+    :chartData="chartData"
+    :tooltipShow="false"
+    :disableScroll="false"
+   />
+</template>
+```
+
 ## H5
 
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
