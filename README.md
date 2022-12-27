@@ -92,7 +92,7 @@
 <template>
   <qiun-data-charts
     type="column"
-    canvasId="interview-result-post-competitiveness"
+    canvasId="random-string"
     :canvas2d="true"
     height="278"
     :animation="false"
