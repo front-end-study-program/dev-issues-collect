@@ -153,3 +153,18 @@
 ## element-ui
 
 1. 树形懒加载表格的增删改之后，数据状态的[更新方案](https://blog.csdn.net/weixin_39150852/article/details/113727283)
+
+## git
+
+1. git stash drop 后怎么恢复
+     ```bash
+     // 1. 查找并恢复丢失的对象（commits、blobs、trees等）
+     git fsck --lost-found
+     dangling commit e8327fb8e078f323f622ace717aff8dfc639e9cc
+     
+     // 2.显示指定的 Git 对象的详细信息。它可以显示提交记录、标签、分支等不同类型的对象的具体内容和元数据
+     git show e8327fb8e078f323f622ace717aff8dfc639e9cc
+     
+     // 3.确认是对应的元数据，恢复
+     git stash apply e8327fb8e078f323f622ace717aff8dfc639e9cc
+     ```
