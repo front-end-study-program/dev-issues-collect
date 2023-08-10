@@ -117,6 +117,8 @@
 
 30.支付宝小程序浏览器使用的 UC 内核（Android browser）从 22 年开始不支持 getUserMedia API，需要使用小程序的 api 实现。
 
+31.微信小程序中的 css backgroudImage 只能是在线地址，不能是本地地址。
+
 ## H5
 
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
