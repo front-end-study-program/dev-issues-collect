@@ -125,6 +125,8 @@
   - 在小程序未登录时，拼接 sso 地址携带假 token，服务端识别到假 token 清除 H5 中的 cookie 信息
   - H5 点击需求登陆的地方跳转到小程序登陆完后，重新赋值 webview 的地址为拼接正常 token 的 sso 地址的中间页，这时 sso 会写入 cookie 信息，中间页回退一层。
 
+34.支付宝小程序 IOS机型 onKeyboardHeight 方法拿到的高度包含了完成栏的高度，不设置 always-system="{{true}}" 实际的键盘不展示完成栏的高度。
+
 ## H5
 
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
