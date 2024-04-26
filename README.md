@@ -127,6 +127,8 @@
 
 34.支付宝小程序 IOS机型 onKeyboardHeight 方法拿到的高度包含了完成栏的高度，不设置 always-system="{{true}}" 实际的键盘不展示完成栏的高度。
 
+35.微信小程序	user-select 设置后 text 标签会变成 inline-block，无法改为别的显示。坑坑坑
+
 ## H5
 
 1. 在微信浏览器中，拉取浏览器自带的下拉会和自身做的下拉刷新冲突，导致 android 出现 bug。
