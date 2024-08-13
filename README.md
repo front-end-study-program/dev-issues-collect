@@ -161,6 +161,16 @@
 6. 底部输入框如果有 placeholder 点击其他地方让输入框失去焦点。再次聚焦的时候键盘会盖住输入框。解决方案：自定义一个 placeholder。
 
 7. 输入聚焦后，点击输入框旁边的按钮没有触发点击事件。因为改变的安全区域导致没有触发点击事件。解决方案：在失焦事件中延迟将安全区域展示出来即可。
+
+8. 浏览器在录制双声道音频的时候，需要设置 echoCancellation 为 false，否则两个声道录制的数据相同。
+   ```js
+   navigator.mediaDevices.getUserMedia({
+     audio: {
+        echoCancellation: false,
+     }
+   })
+   ```
+ 
    
 ## element-ui
 
